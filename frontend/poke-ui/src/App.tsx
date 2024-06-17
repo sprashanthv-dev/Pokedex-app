@@ -1,9 +1,10 @@
 import "./App.css";
+import { Layout } from "./components/layout/Layout.tsx";
 
 function App() {
   return (
     <div>
-      <h1>Pokedex UI :)</h1>
+      <Layout />
     </div>
   );
 }
