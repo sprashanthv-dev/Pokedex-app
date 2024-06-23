@@ -1,9 +1,5 @@
-import { Navbar } from "./Navbar.tsx";
+import { Header } from "./Header.tsx";
 
 export const Layout = () => {
-  return (
-    <>
-      <Navbar />
-    </>
-  );
+  return <Header />;
 };

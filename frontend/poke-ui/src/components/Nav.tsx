@@ -1,22 +1,10 @@
-/*TODO: Show Poke Matchup only when user is logged in
- *       Hide Login menu item once user is logged in */
-
-import "./css/navbar.css";
-
-export const Navbar = () => {
+export const Nav = () => {
   return (
-    <nav className="flex justify-between items-center navbar-bg">
-      <div className="m-4">
-        <img
-          src="../../assets/logo.svg"
-          alt="PokéWorld Logo"
-          className="w-16 lg:w-44 md:w-24"
-        />
-      </div>
+    <nav>
       {/*TODO: Refactor this to map over li's using a loop */}
       {/*TODO: Hamburger menu on small screen sizes */}
       {/*TODO: On hover, highlight the current menu item */}
-      <ul className="flex md:text-xl">
+      <ul className="hidden sm:flex md:text-xl">
         <li className="mx-8 hover:cursor-pointer hover:underline">
           Generations
         </li>
@@ -25,6 +13,12 @@ export const Navbar = () => {
           Poké Matchup
         </li>
         <li className="mx-8 hover:cursor-pointer hover:underline">Login</li>
+      </ul>
+
+      <ul className="flex sm:hidden">
+        <li>
+          <img src="../assets/menu.svg" alt="Hamburger icon" />
+        </li>
       </ul>
     </nav>
   );
