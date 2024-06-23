@@ -2,8 +2,9 @@
  *       Hide Login menu item once user is logged in */
 
 import "./css/navbar.css";
+
 import { Logo } from "./Logo.tsx";
-import { Nav } from "../Nav.tsx";
+import { Nav } from "./Nav.tsx";
 
 export const Header = () => {
   return (
