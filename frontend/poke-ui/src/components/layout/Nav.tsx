@@ -1,9 +1,21 @@
 import { useState } from "react";
 import { NavLinks } from "./NavLinks.tsx";
+import { useResizer } from "../../hooks/useResizer.ts";
 
 //TODO: Add dark / light mode toggle
+//TODO: Move Hamburger Menu Items to a new component
 export const Nav = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  // Extra small screen sizes
+  const xsScreenWidth: number = 640;
+
+  const currentScreenWidth = useResizer();
+
+  // Close hamburger menu if it was opened and not closed in xs screen size
+  if (currentScreenWidth > xsScreenWidth && isMenuOpen) {
+    setIsMenuOpen(false);
+  }
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
