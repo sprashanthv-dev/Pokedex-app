@@ -2,6 +2,7 @@
 TODO: Refactor this to map over li's using a loop
 TODO: On hover, highlight the current menu item
  */
+
 export const NavLinks = () => {
   return (
     <ul className="sm:flex md:text-xl">

@@ -1,6 +1,6 @@
 export const Logo = () => {
   return (
-    <div>
+    <div className="mb-3 sm:mb-0">
       <img
         src="../../assets/logo.svg"
         alt="PokéWorld Logo"

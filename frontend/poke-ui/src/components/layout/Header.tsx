@@ -6,9 +6,13 @@ import "./css/navbar.css";
 import { Logo } from "./Logo.tsx";
 import { Nav } from "./Nav.tsx";
 
+/**
+ * Check if needed - flex-wrap top-0 sticky z-[20] w-full
+ */
+
 export const Header = () => {
   return (
-    <header className="flex justify-between items-center navbar-bg top-0 sticky z-[20] w-full p-3">
+    <header className="flex flex-col sm:flex-row justify-between items-center  navbar-bg  p-3">
       <Logo />
       <Nav />
     </header>
